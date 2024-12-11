@@ -3,7 +3,7 @@
 $lines  = file(__DIR__ . '/input.txt', FILE_IGNORE_NEW_LINES);
 $stones = array_map('intval', explode(' ', $lines[0]));
 
-call_user_func(callback: function () use ($stones) {
+call_user_func(function () use ($stones) {
     for ($i = 0; $i < 25; $i++) {
         $output = [];
         foreach ($stones as $stone) {
